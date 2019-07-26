@@ -1,0 +1,45 @@
+<div class='card'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+    <div class='card-body'>
+        <h1>Employees Salary Calculator</h1>
+        <div class="row">
+            Employee Id:
+            <input type='number' [(ngModel)]='employeeIdToSearch' />
+            <button class='btn btn-primary' (click)='getEmployees()'>
+                Search
+            </button>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contract Type</th>
+                        <th scope="col">Role Id</th>
+                        <th scope="col">Role Name</th>
+                        <th scope="col">Role Description</th>
+                        <th scope="col">Hourly Salary</th>
+                        <th scope="col">Monthly Salary</th>
+                        <th scope="col">Annual Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let employee of employees'>
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.contractTypeName}}</td>
+                        <td>{{employee.roleId}}</td>
+                        <td>{{employee.roleName}}</td>
+                        <td>{{employee.roleDescription}}</td>
+                        <td>{{employee.hourlySalary | currency}}</td>
+                        <td>{{employee.monthlySalary | currency}}</td>
+                        <td>{{employee.annualSalary | currency}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
