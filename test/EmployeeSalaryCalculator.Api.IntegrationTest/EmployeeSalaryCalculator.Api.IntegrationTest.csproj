@@ -8,13 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
-    <PackageReference Include="Moq" Version="4.12.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\EmployeeSalaryCalculator.Api\EmployeeSalaryCalculator.Api.csproj" />
     <ProjectReference Include="..\..\src\EmployeeSalaryCalculator.Core\EmployeeSalaryCalculator.Core.csproj" />
   </ItemGroup>
 

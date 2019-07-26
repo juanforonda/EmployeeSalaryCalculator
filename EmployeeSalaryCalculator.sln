@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeSalaryCalculator.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeSalaryCalculator.Core.Test", "test\EmployeeSalaryCalculator.Core.Test\EmployeeSalaryCalculator.Core.Test.csproj", "{305E67A2-866A-4309-8E6F-C37DCD9EED61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeSalaryCalculator.Api.IntegrationTest", "test\EmployeeSalaryCalculator.Api.IntegrationTest\EmployeeSalaryCalculator.Api.IntegrationTest.csproj", "{5D9B54B6-88B1-4CDE-89AB-23AB7BD1C692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{305E67A2-866A-4309-8E6F-C37DCD9EED61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{305E67A2-866A-4309-8E6F-C37DCD9EED61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{305E67A2-866A-4309-8E6F-C37DCD9EED61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9B54B6-88B1-4CDE-89AB-23AB7BD1C692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9B54B6-88B1-4CDE-89AB-23AB7BD1C692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9B54B6-88B1-4CDE-89AB-23AB7BD1C692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9B54B6-88B1-4CDE-89AB-23AB7BD1C692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

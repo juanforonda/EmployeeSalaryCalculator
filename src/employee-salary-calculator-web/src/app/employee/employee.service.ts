@@ -7,7 +7,7 @@ import {IEmployee} from './employee';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private employeeServiceBaseAddress = 'https://localhost:44346/api/';
+  private employeeServiceBaseAddress = 'https://localhost:5001/api/';
   constructor(private httpClient: HttpClient) {  }
 
   getEmployees(): Observable<IEmployee[]>{
